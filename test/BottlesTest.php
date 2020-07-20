@@ -38,4 +38,13 @@ class BottlesTest extends \PHPUnit\Framework\TestCase {
       "no more bottles of milk on the wall.\n";
     $this->assertEquals($expected, (new Bottles())->verse(1));
   }
+
+  public function test_verse_0() {
+    $expected =
+      "No more bottles of milk on the wall, " .
+      "no more bottles of milk.\n" .
+      "Go to the store and buy some more, " .
+      "99 bottles of milk on the wall.\n";
+    $this->assertEquals($expected, (new Bottles())->verse(0));
+  }
 }
