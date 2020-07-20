@@ -3,6 +3,12 @@
 class Bottles {
   public function verse($number) {
     switch ($number) {
+    case 0:
+      return
+        "No more bottles of milk on the wall, " .
+        "no more bottles of milk.\n" .
+        "Go to the store and buy some more, " .
+        "99 bottles of milk on the wall.\n";
     case 1:
       return
         "1 bottle of milk on the wall, " .
