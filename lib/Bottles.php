@@ -36,7 +36,7 @@ class Bottles {
           "of milk on the wall, " .
         "{$number} {$this->container($number)} of milk.\n" .
         "Take {$this->pronoun($number)} down and pass it around, " .
-        ($number-1) . " {$this->container($number-1)} " .
+        "{$this->quantity($number-1)} {$this->container($number-1)} " .
           "of milk on the wall.\n";
     }
   }
