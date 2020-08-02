@@ -22,7 +22,7 @@ class Bottles {
       return
         ucfirst($this->quantity($number)) . " {$this->container($number)} " .
           "of milk on the wall, " .
-        "no more bottles of milk.\n" .
+        "{$this->quantity($number)} {$this->container($number)} of milk.\n" .
         "Go to the store and buy some more, " .
         "99 bottles of milk on the wall.\n";
     default:
