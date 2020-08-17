@@ -22,7 +22,7 @@ class Bottles {
     return
       ucfirst($bottleNumber->quantity()) . " {$bottleNumber->container()} " .
         "of milk on the wall, " .
-      "{$this->quantity($number)} {$this->container($number)} of milk.\n" .
+      "{$bottleNumber->quantity()} {$bottleNumber->container()} of milk.\n" .
       "{$bottleNumber->action()}, " .
       "{$this->quantity($this->successor($number))} " .
         "{$this->container($this->successor($number))} " .
