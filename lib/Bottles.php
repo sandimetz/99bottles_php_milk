@@ -17,15 +17,13 @@ class Bottles {
   }
 
   public function verse($number) {
-    return (new BottleVerse($number))->verse($number);
+    $bottleNumber = BottleNumber::for($number);
 
-    // $bottleNumber = BottleNumber::for($number);
-
-    // return
-    //   ucfirst("{$bottleNumber} of milk on the wall, ") .
-    //   "{$bottleNumber} of milk.\n" .
-    //   "{$bottleNumber->action()}, " .
-    //   "{$bottleNumber->successor()} of milk on the wall.\n";
+    return
+      ucfirst("{$bottleNumber} of milk on the wall, ") .
+      "{$bottleNumber} of milk.\n" .
+      "{$bottleNumber->action()}, " .
+      "{$bottleNumber->successor()} of milk on the wall.\n";
   }
 }
 
