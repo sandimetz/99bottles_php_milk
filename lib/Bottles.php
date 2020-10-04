@@ -22,7 +22,7 @@ class Bottles {
           " of milk on the wall, " .
         $this->quantity($number) . " " . $this->container($number) . " of milk.\n" .
         $this->action($number) . ", " .
-        $this->quantity(99) . " " . $this->container($number-1) .
+        $this->quantity($this->successor($number)) . " " . $this->container($number-1) .
           " of milk on the wall.\n";
     default:
       return
