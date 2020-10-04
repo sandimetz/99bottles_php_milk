@@ -40,4 +40,7 @@ class Bottles {
         ($number-1) . " bottles of milk on the wall.\n";
     }
   }
+
+  public function container() {
+  }
 }
