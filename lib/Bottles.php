@@ -15,6 +15,14 @@ class Bottles {
   }
 
   public function verse(int $number): string {
+    return
+      ucfirst($this->quantity($number)) . " " . $this->container($number) .
+        " of milk on the wall, " .
+      $this->quantity($number) . " " . $this->container($number) . " of milk.\n" .
+      $this->action($number) . ", " .
+      $this->quantity($this->successor($number)) . " " .
+        $this->container($this->successor($number)) . " of milk on the wall.\n";
+
     switch ($number) {
     case 0:
       return
