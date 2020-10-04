@@ -21,14 +21,14 @@ class Bottles {
         ucfirst($this->quantity($number)) . " " . $this->container($number) .
           " of milk on the wall, " .
         $this->quantity($number) . " " . $this->container($number) . " of milk.\n" .
-        "Go to the store and buy some more, " .
+        $this->action($number) . ", " .
         "99 bottles of milk on the wall.\n";
     default:
       return
         ucfirst($this->quantity($number)) . " " . $this->container($number) .
           " of milk on the wall, " .
         $this->quantity($number) . " " . $this->container($number) . " of milk.\n" .
-        "Take " . $this->pronoun($number) . " down and pass it around, " .
+        $this->action($number) . ", " .
         $this->quantity($number-1) . " " . $this->container($number-1) .
           " of milk on the wall.\n";
     }
