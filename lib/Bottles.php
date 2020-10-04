@@ -23,7 +23,7 @@ class Bottles {
         "99 bottles of milk on the wall.\n";
     default:
       return
-        $number . " " . $this->container($number) .
+        ucfirst($this->quantity($number)) . " " . $this->container($number) .
           " of milk on the wall, " .
         $number . " " . $this->container($number) . " of milk.\n" .
         "Take " . $this->pronoun($number) . " down and pass it around, " .
