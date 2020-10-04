@@ -22,16 +22,16 @@ class Bottles {
           " of milk on the wall, " .
         $this->quantity($number) . " " . $this->container($number) . " of milk.\n" .
         $this->action($number) . ", " .
-        $this->quantity($this->successor($number)) . " " . $this->container($number-1) .
-          " of milk on the wall.\n";
+        $this->quantity($this->successor($number)) . " " .
+          $this->container($this->successor($number)) . " of milk on the wall.\n";
     default:
       return
         ucfirst($this->quantity($number)) . " " . $this->container($number) .
           " of milk on the wall, " .
         $this->quantity($number) . " " . $this->container($number) . " of milk.\n" .
         $this->action($number) . ", " .
-        $this->quantity($this->successor($number)) . " " . $this->container($number-1) .
-          " of milk on the wall.\n";
+        $this->quantity($this->successor($number)) . " " .
+          $this->container($this->successor($number)) . " of milk on the wall.\n";
     }
   }
 
