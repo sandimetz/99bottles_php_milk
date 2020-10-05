@@ -18,7 +18,7 @@ class Bottles {
     $bottleNumber = new BottleNumber($number);
 
     return
-      ucfirst($this->quantity($number)) . " " . $this->container($number) .
+      ucfirst($bottleNumber->quantity()) . " " . $bottleNumber->container() .
         " of milk on the wall, " .
       $this->quantity($number) . " " . $this->container($number) . " of milk.\n" .
       $bottleNumber->action() . ", " .
