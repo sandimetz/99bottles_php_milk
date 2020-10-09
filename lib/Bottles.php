@@ -24,6 +24,10 @@ class Bottles {
       "{$bottleNumber->action()}, " .
       "{$nextBottleNumber} of milk on the wall.\n";
   }
+
+  public function bottleNumberFor(int $number): object {
+    return new BottleNumber($number);
+  }
 }
 
 class BottleNumber {
