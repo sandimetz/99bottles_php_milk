@@ -22,8 +22,7 @@ class Bottles {
       ucfirst($bottleNumber->toString()) . " of milk on the wall, " .
       $bottleNumber->toString() . " of milk.\n" .
       $bottleNumber->action() . ", " .
-      $nextBottleNumber->toString() .
-        " of milk on the wall.\n";
+      $nextBottleNumber->toString() . " of milk on the wall.\n";
   }
 }
 
