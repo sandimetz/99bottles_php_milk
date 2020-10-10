@@ -39,8 +39,6 @@ class BottleVerse {
   }
 
   private function _lyrics(): string {
-    $bottleNumber = $this->number;
-
     return
       ucfirst("{$this->bottleNumber} of milk on the wall, ") .
       "{$this->bottleNumber} of milk.\n" .
