@@ -31,6 +31,16 @@ class BottleVerse {
   public function __construct(int $number) {
     $this->number = $number;
   }
+
+  public function verse(int $number): string {
+    $bottleNumber = BottleNumber::for($number);
+
+    return
+      ucfirst("{$bottleNumber} of milk on the wall, ") .
+      "{$bottleNumber} of milk.\n" .
+      "{$bottleNumber->action()}, " .
+      "{$bottleNumber->successor()} of milk on the wall.\n";
+  }
 }
 
 class BottleNumber {
